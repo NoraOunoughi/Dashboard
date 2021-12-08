@@ -1,0 +1,28 @@
+.github {
+  flex: 4;
+  padding: 20px;
+}
+
+.githubTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.githubTop {
+  display: flex;
+}
+
+.githubTopLeft,
+.githubTopRight {
+  flex: 1;
+}
+
+.githubBottomLeft,
+.githubBottomRight {
+  flex: 1;
+}
+
+.githubBottom {
+  display: flex;
+}

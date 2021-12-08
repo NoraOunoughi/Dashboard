@@ -1,0 +1,28 @@
+.youtube {
+  flex: 4;
+  padding: 20px;
+}
+
+.youtubeTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.youtubeTop {
+  display: flex;
+}
+
+.youtubeTopLeft,
+.youtubeTopRight {
+  flex: 1;
+}
+
+.youtubeBottomLeft,
+.youtubeBottomRight {
+  flex: 1;
+}
+
+.youtubeBottom {
+  display: flex;
+}

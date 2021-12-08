@@ -1,0 +1,28 @@
+.weather {
+  flex: 4;
+  padding: 20px;
+}
+
+.weatherTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weatherTop {
+  display: flex;
+}
+
+.weatherTopLeft,
+.weatherTopRight {
+  flex: 1;
+}
+
+.weatherBottomLeft,
+.weatherBottomRight {
+  flex: 1;
+}
+
+.weatherBottom {
+  display: flex;
+}

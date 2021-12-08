@@ -1,0 +1,426 @@
+.home {
+  flex: 4;
+  width: 100%;
+  padding: 20px;
+}
+
+.homeTitleContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeTop {
+  display: flex;
+}
+
+.homeTopLeft,
+.homeTopRight {
+  flex: 1;
+}
+
+.homeBottomLeft,
+.homeBottomRight {
+  flex: 1;
+}
+
+.homeBottom {
+  display: flex;
+}
+
+.homeSubmenu{
+  border: none;
+  background-color: rgb(71, 167, 245);
+  color: white;
+  font-size: 15px;
+  height: 30px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgb(52, 137, 207);
+  }
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.buttonTitle {
+  font-size: 13px;
+  color: rgb(8, 100, 143);
+}
+
+.buttonPos {
+  display: flex;
+  Width:  100%;
+  justify-content: end
+}
+.homeAddButton {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  background-color: teal;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.homeAddButton3 {
+  width: 30;
+  border-color: white;
+  padding: 5px;
+  background-color: rgb(228, 107, 107);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.homeAddButton2 {
+  width: 50;
+  border-color: white;
+  padding: 5px;
+  background-color: rgb(71, 167, 245);
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.hide-content{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.521);
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.divbutton{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.modal-box{
+  background-color: teal;
+  border-color: black;
+  color: whitesmoke;
+  border-radius: 20px;
+  z-index: 2;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.flexbox{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  
+}
+
+.widget-container{
+  border: solid 1px;
+  max-width: 700px;
+}
+  
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+$color1: #C8DAE6;
+$color2: white;
+$color3: #B8B8B8;
+$color4: #FFCD41;
+$color5: #2092A9;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.weather-card {
+
+    margin:  20px 5px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    background-image: url("https://www.teahub.io/photos/full/187-1874049_clouds-good-weather-sky-cloud-cumulus.jpg");
+    box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+    animation: appear 500ms ease-out forwards;
+
+    h1 {
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-weight:300;
+        font-size:80px;
+        color: $color3;
+        bottom: 80px;
+        left: 35px;
+        opacity: 0;
+        transform: translateX(150px);
+        animation: title-appear 500ms ease-out 500ms forwards;
+    }
+
+    input {
+      font-family: 'Lato', sans-serif;
+      width: 150;
+      border-radius: 20px;
+      background-color: whitesmoke;
+
+      height: 30px;
+    }
+
+    p {
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        font-weight:300;
+        font-size:28px;
+        color: lighten($color3, 10%);
+        bottom: 0;
+        left: 35px;
+        animation: title-appear 1s ease-out 500ms forwards;
+    }
+}
+
+.weather-card2 {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  background-image: url("https://us.123rf.com/450wm/sutichak/sutichak1709/sutichak170900390/85621393-sun-light-solar-energy-on-clear-blue-sky-weather-background-sunny-uv-rays-in-a-hot-day.jpg?ver=6");
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+
+  h1 {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:70px;
+      color: $color3;
+      bottom: 70px;
+      left: 35px;
+      opacity: 0;
+      transform: translateX(150px);
+      animation: title-appear 500ms ease-out 500ms forwards;
+  }
+
+  p {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:28px;
+      color: lighten($color3, 10%);
+      bottom: 0;
+      left: 35px;
+      animation: title-appear 1s ease-out 500ms forwards;
+  }
+}
+
+.weather-card3 {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+ 
+}
+
+
+.weather-card4 {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+
+  h1 {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:70px;
+      color: $color3;
+      bottom: -20px;
+      left: 0px;
+      opacity: 0;
+      transform: translateX(150px);
+      animation: title-appear 500ms ease-out 500ms forwards;
+  }
+
+  p {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:500;
+      font-size:28px;
+      color: lighten(black, 30%);
+
+      bottom: 0;
+      left: 35px;
+      animation: title-appear 1s ease-out 500ms forwards;
+  }
+}
+
+.weather-card5 {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+
+  h1 {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:70px;
+      color: $color3;
+      bottom: -20px;
+      left: 0px;
+      opacity: 0;
+      transform: translateX(150px);
+      animation: title-appear 500ms ease-out 500ms forwards;
+  }
+
+  p {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:500;
+      font-size:28px;
+      color: lighten(whitesmoke, 30%);
+
+      bottom: 20px;
+      left: 35px;
+      animation: title-appear 1s ease-out 500ms forwards;
+  }
+}
+
+.weather-card6 {
+
+  margin:  20px 5px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 270px;
+  height: 270px;
+  box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
+  animation: appear 500ms ease-out forwards;
+
+  h1 {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:300;
+      font-size:70px;
+      color: $color3;
+      bottom: -20px;
+      left: 0px;
+      opacity: 0;
+      transform: translateX(150px);
+      animation: title-appear 500ms ease-out 500ms forwards;
+  }
+
+  p {
+      position: absolute;
+      font-family: 'Lato', sans-serif;
+      font-weight:500;
+      font-size:28px;
+      color: rgb(94, 247, 47);
+
+      bottom: 0;
+      left: 35px;
+      animation: title-appear 1s ease-out 500ms forwards;
+  }
+}
+
+.sun {
+  background: $color4;
+	border-radius: 50%;
+	box-shadow: rgba(255,255,0,0.1) 0 0 0 4px;
+  animation: light 800ms ease-in-out infinite alternate, weather-icon-move 5s ease-in-out infinite;
+}
+
+.widgets-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+
+  &>div{
+    margin: 0px 50px;
+  }
+}
+
+@keyframes light {
+    from {
+        box-shadow: rgba(255,255,0,0.2) 0 0 0 10px;
+    }
+    to {
+        box-shadow: rgba(255,255,0,0.2) 0 0 0 17px;
+    }
+}
+
+@keyframes rain {
+    from {
+        box-shadow:
+        $color5 8px 0px,
+		$color5 32px -6px,
+		$color5 20px 0px;
+    }
+    to {
+        box-shadow:
+        $color5 8px 6px,
+		$color5 32px 0px,
+		$color5 20px 6px;
+    }
+}
+
+@keyframes weather-icon-move {
+	50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes appear {
+  0% {
+    transform:scale(0);
+  }
+  50% {
+    transform:scale(1.05)
+  }
+  75% {
+    transform:scale(0.95)
+  }
+  100% {
+   transform:scale(1)
+  }
+}
+
+@keyframes title-appear {
+    from {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
