@@ -138,7 +138,7 @@ Lucas Lindemans - lucas.lindemans@epitech.eu
 Nora Ounoughi - Nora.Ounoughi@epitech.eu
 
 
-Project Link: [https://github.com/EpitechPromo2024/B-DEV-500-PAR-5-1-dashboard-nora.ounoughi)
+Project Link: [https://github.com/NoraOunoughi/Dashboard.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
